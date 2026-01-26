@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[ERROR] [ERROR] Some problems were encountered while processing the POMs:
+[ERROR] Malformed POM /home/pluto/projects/Train-Booking-System/pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<groupId>com.example</groupId>sources\n    <a... @9:7)  @ /home/pluto/projects/Train-Booking-System/pom.xml, line 9, column 7
+ @ 
+[ERROR] The build could not read 1 project -> [Help 1]
+[ERROR]   
+[ERROR]   The project com.example:Train-Booking-System:1.0-SNAPSHOT (/home/pluto/projects/Train-Booking-System/pom.xml) has 1 error
+[ERROR]     Malformed POM /home/pluto/projects/Train-Booking-System/pom.xml: expected START_TAG or END_TAG not TEXT (position: TEXT seen ...<groupId>com.example</groupId>sources\n    <a... @9:7)  @ /home/pluto/projects/Train-Booking-System/pom.xml, line 9, column 7 -> [Help 2]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
+[ERROR] [Help 2] http://cwiki.apache.org/confluence/display/MAVEN/ModelParseException
