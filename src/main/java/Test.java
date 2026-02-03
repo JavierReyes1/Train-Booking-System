@@ -98,7 +98,7 @@ public class Test {
 		return i;
 	}// End of UPDATE
 
-	public static int Delete(int customerID) {
+	public static int delete(int customerID) {
 		int i = 0;
 		try {
 			connection = DriverManager.getConnection(DATABASE_URL, USER, PASSWORD);
@@ -155,9 +155,15 @@ public class Test {
 			}
 		}
 	} // end of QUERY
+	
+	public void menu(){
+
+	}
 
 	public static void main(String[] args) {
-		insert("Javier", "Reyes");
+		//delete("Javier", "Reyes");
+		delete(1);
+		query();
 
 	}// end main
 
