@@ -1,0 +1,6 @@
+java.sql.SQLException: No suitable driver found for jdbc:mariadb://localhost:3306/test_table
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:638)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:199)
+	at Test.main(Test.java:18)
+java.lang.NullPointerException: Cannot invoke "java.sql.PreparedStatement.close()" because "<local2>" is null
+	at Test.main(Test.java:34)

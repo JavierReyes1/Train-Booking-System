@@ -1,0 +1,23 @@
+.
+├── pom.xml
+├── README.md
+├── src
+│   ├── main
+│   │   └── java
+│   └── test
+│       └── java
+├── target
+│   ├── classes
+│   │   └── Test.class
+│   ├── generated-sources
+│   │   └── annotations
+│   ├── generated-test-sources
+│   │   └── test-annotations
+│   ├── mariadb-test-1.0-SNAPSHOT.jar
+│   ├── maven-archiver
+│   │   └── pom.properties
+│   └── maven-status
+│       └── maven-compiler-plugin
+└── text.txt
+
+15 directories, 6 files
