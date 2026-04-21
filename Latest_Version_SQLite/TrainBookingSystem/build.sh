@@ -1,11 +1,24 @@
 #!/bin/bash
 
 #Build script for Train Booking System
-#Compiles source code and packages into a jar
+#Compiles source code, runs tests and packages into a jar
 
 #Compile all java source code
 echo "Compiling..." 
 ./compile.sh
+
+#Compile the unit tests
+echo "Compiling tests..."
+javac -cp "lib/sqlite-jdbc-3.53.0.0.jar:lib/junit-platform-console-standalone-1.10.0.jar:out" \
+-d out \
+test/com/trainbooking/BookingServiceTest.java
+
+
+#Compile the unit tests
+echo "Running tests..."
+java -jar lib/junit-platform-console-standalone-1.10.0.jar \
+--classpath "out:lib/sqlite-jdbc-3.53.0.0.jar" \
+--scan-classpath > test-results.txt 2>&1
 
 #Create a temp folder and compy compiled classes into it
 echo "Building jar.."
